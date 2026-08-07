@@ -1,0 +1,20 @@
+
+[data-animate]{
+    opacity:0;
+    transform:translateY(30px);
+    transition:opacity .7s ease,transform .7s ease;
+}
+
+[data-animate].visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.float-soft{
+    animation:floatSoft 4s ease-in-out infinite alternate;
+}
+
+@keyframes floatSoft{
+    from{transform:translateY(0)}
+    to{transform:translateY(-12px)}
+}
